@@ -22,6 +22,12 @@ int main( void ) {
      * Print out the final results for the 2 roots as float values.
      */
 
+    float discriminant = (b * b) - (4 * a * c);
+    root1 = (-b + sqrt(discriminant)) / (2 * a);
+    root2 = (-b - sqrt(discriminant)) / (2 * a);
+
+    printf("Root 1: %f\n", root1);
+    printf("Root 2: %f\n", root2);
     
 
     return 0;
