@@ -26,7 +26,7 @@
     printf("Salary £%d\n", salary);
     printf("NI contribution £%.2f\n", niContribution);
     printf("Tax contribution £%.2f\n", taxContribution);
-    printf("Take home salary £%d\n", (int)(takeHomeSalary - taxContribution));
+    printf("Take home salary £%.2f\n", takeHomeSalary - taxContribution);
 
     return 0;
  }
