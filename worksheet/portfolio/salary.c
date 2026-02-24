@@ -10,7 +10,7 @@
  int main( void )
  {
     // define and initialise variables for the problem data
-    int salary = 36250, nationalInsurance = 8, taxRate = 15;
+    float salary = 36250, nationalInsurance = 8, taxRate = 15;
 
     // calculate the deductions and final take-home salary
     float niContribution = salary * (nationalInsurance / 100.0);
@@ -23,7 +23,7 @@
     }
 
     // Use only these print statement with appropriate formatting and variable names
-    printf("Salary £%d\n", salary);
+    printf("Salary £%.2f\n", salary);
     printf("NI contribution £%.2f\n", niContribution);
     printf("Tax contribution £%.2f\n", taxContribution);
     printf("Take home salary £%.2f\n", takeHomeSalary - taxContribution);
