@@ -10,16 +10,16 @@
  int main( void )
  {
     // define and initialise variables for the problem data
-    float salary = 36250, nationalInsurance = 8, taxRate = 15;
+    float salary = 36250, nationalInsurance = 0.08, taxRate = 0.15;
 
     // calculate the deductions and final take-home salary
-    float niContribution = salary * (nationalInsurance / 100.0);
+    float niContribution = salary * nationalInsurance;
     float taxContribution = 0;
 
     float takeHomeSalary = salary - niContribution;
     if (takeHomeSalary > 12500)
     {
-        taxContribution = ((takeHomeSalary) - 12500) * (taxRate / 100.0);
+        taxContribution = ((takeHomeSalary) - 12500) * taxRate;
     }
 
     // Use only these print statement with appropriate formatting and variable names
